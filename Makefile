@@ -11,7 +11,8 @@ AWS_DEFAULT_REGION?=ap-southeast-2
 all: build
 
 clean:
-	docker rmi $(REGISTRY)/$(IMAGE_NAME)
+	./gradlew clean && \
+		docker rmi $(REGISTRY)/$(IMAGE_NAME)
 
 build:
 	./gradlew build && \
