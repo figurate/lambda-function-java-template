@@ -7,6 +7,9 @@ repositories {
 }
 
 dependencies {
+    runtimeOnly 'org.apache.logging.log4j:log4j-slf4j-impl:2.13.0',
+            'com.amazonaws:aws-lambda-java-log4j2:1.2.0'
+
     compileOnly "com.amazonaws:aws-lambda-java-core:$awsLambdaJavaVersion"
 }
 
