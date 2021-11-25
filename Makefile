@@ -1,10 +1,5 @@
 SHELL:=/bin/bash
-REGISTRY?=figurate
-IMAGE_NAME=lambda-function-java-template
-TAGS?=latest
-BUILD_ARGS?=
-JAVA_VERSION=11
-AWS_DEFAULT_REGION?=ap-southeast-2
+include .env
 
 .PHONY: all build tag push
 
